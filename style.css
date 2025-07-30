@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    padding: 1em;
+    color: white;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 0.5em;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a :hover{
+    color:rgb(22, 112, 0)
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  .blog-post {
+    background: rgb(231, 231, 231);
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #ddd;
+  }
+  
