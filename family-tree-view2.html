@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .hidden-text {
+      display: none;
+      color: black;
+      margin-top: 5px;
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .clickable-text {
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Blog</title>
+  <link rel="stylesheet" href="tree.css" />
+</head>
+
+<body>
+    <header>
+      <h1>The Padala Family Blog</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="posts.html">Posts</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+      <a href="family-tree-view1.html">Family Tree</a>
+    </nav>
+    </header>
+    <main>
+      <nav>
+        <a href="family-tree-view1.html">Click here to see tree view</a>
+      </nav>
+      <p class="clickable-text" onclick="toggleText('section1')">First Generation</p>
+      <p id="section1" class="hidden-text">P.V. Ramana --- Manikyam</p>
+      <p class="clickable-text" onclick="toggleText('section2')">Second Generation</p>
+      <p id="section2" class="hidden-text">Hemalatha --- SS Rao &nbsp;&nbsp;&nbsp;  Nanamma --- Leema Rao &nbsp;&nbsp;&nbsp;  Jayalaxmi --- Manohar Rao &nbsp;&nbsp;&nbsp;  Laxmi Bai --- Kalidas  &nbsp;&nbsp;&nbsp; Prabhakar Rao --- Anuradha &nbsp;&nbsp;&nbsp;  Divakar Rao --- Laxmi Bai  &nbsp;&nbsp;&nbsp; Murali</p>
+      <p class="clickable-text" onclick="toggleText('section3')">Third Generation</p>
+      <p id="section3" class="hidden-text">Munna --- Sujatha &nbsp;&nbsp;&nbsp;  Munni --- Rajeswar Rao  &nbsp;&nbsp;&nbsp; Chanti --- Ram Gopal &nbsp;&nbsp;&nbsp;  Priya --- Sudha &nbsp;&nbsp;&nbsp;  Raja  &nbsp;&nbsp;&nbsp; Vani --- Ramesh  &nbsp;&nbsp;&nbsp; Sekhar --- Sushma &nbsp;&nbsp;&nbsp;  Usha --- Raja  &nbsp;&nbsp;&nbsp; Santu --- Lavanya  &nbsp;&nbsp;&nbsp; Srinu --- Triveni</p>
+      <p class="clickable-text" onclick="toggleText('section4')">Fourth Generation</p>
+      <p id="section4" class="hidden-text">Rosi  &nbsp;&nbsp;&nbsp; Raja  &nbsp;&nbsp;&nbsp; Teja &nbsp;&nbsp;&nbsp;  Mohit &nbsp;&nbsp;&nbsp;  Ritika  &nbsp;&nbsp;&nbsp; Gagan  &nbsp;&nbsp;&nbsp; Banti &nbsp;&nbsp;&nbsp;  Vedish &nbsp;&nbsp;&nbsp;  Anish  &nbsp;&nbsp;&nbsp; Bhavik  &nbsp;&nbsp;&nbsp; Benu &nbsp;&nbsp;&nbsp;  Bebo  &nbsp;&nbsp;&nbsp; Hemasri  &nbsp;&nbsp;&nbsp; Satvik</p>
+      <script>
+        function toggleText(id) {
+          console.log("====", id)
+          const text = document.getElementById(id);
+          if (text.style.display === "none" || text.style.display === "") {
+            text.style.display = "block";
+          } else {
+            text.style.display = "none";
+          }
+        }
+      </script>      
+    </main>
+
+    <footer>
+        <p>© 2025 The Padala Family. All rights reserved.</p>
+      </footer>
+    
+      <script src="script.js"></script>
+</body>
+</html>
