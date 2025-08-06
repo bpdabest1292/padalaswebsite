@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   color: #333;
   text-align: center;
   width: 100%;
@@ -28,7 +28,7 @@ nav {
 
 .nav {
   margin: 20px auto;
-  width: 455px;
+  /* width: 455px; */
   min-height: auto;
 }
 
@@ -66,11 +66,6 @@ footer {
   background-color: #ddd;
 }
 
-.nav ul {
-  position: relative;
-  padding-top: 20px;
-}
-
 .nav li {
   position: relative;
   padding: 20px 3px 0 3px;
@@ -103,7 +98,8 @@ footer {
 }
 
 .nav li:only-child{
-  padding-top: 0;
+  padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .nav li:first-child::before,
@@ -128,9 +124,15 @@ a {
   border-radius: 5px 0 0 0;
 }
 
+.nav li:last-child {
+  margin-bottom: 30px;
+}
+
 .nav li:last-child::before {
-  border: 1px solid #4CAF50;
+  /* border: 1px solid #4CAF50; */
   border-radius: 0 5px 0 0;
+  border-right: none;
+  border-left: 1px solid #4CAF50;
 }
 
 .nav li:last-child::after {
